@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King</title>
+    <style>
+        :root{
+            --pheight:577px;
+            --pwidth:1000px;
+            --color:yellow;
+            --margin:2px;
+            --border:2px sloid black;
+            --sh:225px;
+            --sw:285px;
+            --sc:green;
+            --sib:inline-block;
+            --bh:100px;
+            --bw:500px;
+            --ch:100px;
+            --cw:150px;
+            --cbr:50%;
+            --rh:150px;
+            --rw:806px;
+
+
+        
+        }
+        .parent{
+           height: var(--pheight);
+           width: var(--pwidth);
+           background-color: var(--color);
+           border: var(--border);
+        }
+        .big{
+            height: var(--bh);
+            width: var(--bw);
+            background-color: var(--sc);
+            margin: var(--margin);
+            border: var(--border);
+        }
+        .same{
+            height: var(--sh);
+            width: var(--sw);
+            background-color: var(--sc);
+            display: var(--sib);
+            margin:var(--margin) ;
+            border: var(--border);
+        }
+        .c{
+            height: var(--ch);
+            width: var(--cw);
+            background-color: var(--sc);
+            border-radius: var(--cbr);
+            display:var(--sib);
+        }
+        .rec{
+            height:var(--rh);
+            width:var(--rw) ;
+            background-color: var(--sc);
+            display: var(--sib);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="parent">
+        <div class="big"></div>
+        <div class="same"></div>
+          <div class="same"></div>
+            <div class="same"></div>
+            <div class="c"></div>
+            <div class="rec"></div>
+    </div>
+    
+</body>
+</html>

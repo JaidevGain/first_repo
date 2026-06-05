@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .parent{
+            height: 100vh;
+            width: 900px;
+            border: 2px solid black;
+            display: grid;
+            gap: 3px;
+            grid-template-columns: repeat(3,300px);
+            grid-template-rows: repeat(3,150px);
+        }
+        .same{
+            background-color: red;
+          
+
+        }
+        .big{
+            background-color: blue;
+            grid-column: 1/5;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="same"></div>
+        <div class="same"></div>
+        <div class="same"></div>
+        <div class="big"></div>
+        <div class="s"></div>
+        <div class="b"></div>
+    </div>
+    
+</body>
+</html>

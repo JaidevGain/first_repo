@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Dashboard</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            font-family:Arial, sans-serif;
+        }
+
+        .sidebar{
+            width:220px;
+            background:black;
+            color:white;
+            display:flex;
+            flex-direction:column;
+            gap:20px;
+            padding:20px;
+        }
+
+        .main{
+            flex:1;
+            display:flex;
+            flex-direction:column;
+        }
+
+        .navbar{
+            height:70px;
+            background:orange;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:24px;
+            font-weight:bold;
+        }
+
+        .cards{
+            flex:1;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:20px;
+        }
+
+        .card{
+            width:180px;
+            height:180px;
+            background:skyblue;
+            border-radius:15px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:25px;
+            font-weight:bold;
+        }
+
+        .card:hover{
+            transform:scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <p>Home</p>
+        <p>Profile</p>
+        <p>Settings</p>
+    </div>
+
+    <div class="main">
+        <div class="navbar">Flex Dashboard</div>
+
+        <div class="cards">
+            <div class="card">A</div>
+            <div class="card">B</div>
+            <div class="card">C</div>
+        </div>
+    </div>
+
+</body>
+</html>
